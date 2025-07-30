@@ -1,24 +1,24 @@
-import React, { memo } from 'react'
+// Header.js
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default memo(function header() {
+
+export default function Header() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">accueil</a>
-        <a class="nav-link" href="#">contact</a>
-        <a class="nav-link" href="#">portfolio</a>
-        <a class="nav-link disabled" aria-disabled="true">a propos</a>
-      </div>
-    </div>
-  </div>
-</nav>
-    </div>
-  )
-})
+    <Navbar expand="lg" bg="light" variant="light" fixed="top">
+      <Container fluid>
+        <Navbar.Brand href="#">John Doe</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#">Services</Nav.Link>
+            <Nav.Link href="#">Portfolio</Nav.Link>
+            <Nav.Link href="#">Contact</Nav.Link>
+            <Nav.Link href="#">Mentions Légales</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}

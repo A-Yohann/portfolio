@@ -2,15 +2,30 @@ import React, { memo } from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4 mt-auto">
+    <footer className="bg-dark text-white py-4 mt-auto container-fluid fixed-bottom ">
       <div className="container">
         <div className="row">
           
           <div className="col-md-4 mb-3">
-            <h5>À propos</h5>
-            <p>
-              Ceci est un exemple de footer en 3 colonnes avec Bootstrap 5 dans React.
-            </p>
+            <h5>John Doe</h5>
+            <address>
+              <ul className='list-unstyled'>
+                <li className='text-white text-decoration-none'>
+                  40 rue Laure Dielbold
+                </li>
+                <li className='text-white  text-decoration-none'>
+                  69009 Lyon, France 
+                </li>
+                <li className='text-white text-decoration-none'>
+                  10 20 30 40 50 
+                </li>
+                <li className='text-white text-decoration-none'>
+                  john.doe@gamil.com
+                </li>
+              </ul>
+            </address>  
+            {/*ajout de logo*/}
+            
           </div>
 
           
@@ -29,12 +44,17 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#!" className="text-white text-decoration-none">
-                  Contact
+                  Portfolio
                 </a>
               </li>
               <li>
                 <a href="#!" className="text-white text-decoration-none">
-                  À propos
+                  Me contacter
+                </a>
+              </li>
+              <li>
+                <a href="#!" className="text-white text-decoration-none">
+                  Mentions légales
                 </a>
               </li>
             </ul>
@@ -42,20 +62,27 @@ const Footer = () => {
 
           
           <div className="col-md-4 mb-3">
-            <h5>Contact</h5>
-            <address>
-              123 Rue Exemple<br />
-              Ville, Pays<br />
-              Email:{" "}
-              <a
-                href="mailto:contact@monsite.com"
-                className="text-white text-decoration-none"
-              >
-                contact@monsite.com
-              </a>
-              <br />
-              Téléphone: +33 1 23 45 67 89
-            </address>
+            <h5>Mes dernieres realisation</h5>
+            <ul className='list-unstyled'>
+              <li className='text-white text-decoration-none'>
+                Fresh food
+              </li>
+              <li className='text-white text-decoration-none'>
+                Restaurant akira
+              </li>
+              <li className='text-white text-decoration-none'>
+                Espaces bien etre 
+              </li>
+              <li className='text-white text-decoration-none'>
+                SEO
+              </li>
+              <li className='text-white text-decoration-none'>
+                Creation d'une API
+              </li>
+              <li className='text-white text-decoration-none'>
+                Maquette d'un site
+              </li>
+            </ul>
           </div>
         </div>
 
