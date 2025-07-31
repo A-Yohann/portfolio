@@ -1,6 +1,7 @@
 import React from 'react';
 import banane from '../assets/dev.jpg';
 import '../App.css';
+import dev2 from '../assets/dev2.jpg';
 
 export default function Home() {
   //  Déclaration correcte du tableau
@@ -30,7 +31,8 @@ export default function Home() {
         <div className="row shadow p-4 bg-white rounded">
           <div className="col-md-6">
             <h4>A propos</h4>
-            <img src="https://via.placeholder.com/400x200" alt="dev" className="img-fluid rounded mb-3" />
+            <hr color='bg-primary'/>
+            <img className="img-fluid hero-img w-100" src={dev2} alt="image développeur web" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, necessitatibus. <br/>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, necessitatibus.
@@ -38,6 +40,7 @@ export default function Home() {
           </div>
           <div className="col-md-6">
             <h4>Mes compétences</h4>
+            <hr/>
             {/*  Rendu dynamique des barres */}
             <ul className="list-unstyled">
               {competences.map(({ skill, level, color }, index) => (
