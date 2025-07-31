@@ -4,14 +4,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './compenants/header';
 import Footer from './compenants/footer';
 import Home from './compenants/Home';
+import Aside from"./compenants/aside";
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
        <Header/>
-       <Home/> 
-        <Footer/>
+       <Home/>
+       <Footer/>
+        
         
     </>
   )

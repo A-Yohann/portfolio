@@ -2,8 +2,9 @@ import React, { memo } from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4 mt-auto container-fluid fixed-bottom ">
-      <div className="container">
+    <footer className="bg-dark text-white py-4 mt-auto w-100">
+
+<div className="container">
         <div className="row">
           
           <div className="col-md-4 mb-3">

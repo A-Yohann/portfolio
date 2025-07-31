@@ -3,20 +3,11 @@ import banane from '../assets/dev.jpg';
 import '../App.css';
 
 export default function Home() {
-  //  Déclaration correcte du tableau
-  const competences = [
-    { skill: 'HTML5', level: 90, color: 'bg-danger' },
-    { skill: 'CSS3', level: 80, color: 'bg-primary' },
-    { skill: 'JavaScript', level: 70, color: 'bg-info' },
-    { skill: 'PHP', level: 60, color: 'bg-warning' },
-    { skill: 'React', level: 50, color: 'bg-success' }
-  ];
-
   return (
     <>
       {/* Hero section */}
       <section className="hero-section position-relative text-white">
-        <img className="img-fluid hero-img w-100" src={banane} alt="image développeur web" />
+        <img className="img-fluid hero-img" src={banane} alt="image développeur web" />
         
         <div className="hero-text position-absolute top-50 start-50 translate-middle text-center">
           <h1>Bonjour, je suis John Doe</h1>
@@ -38,16 +29,21 @@ export default function Home() {
           </div>
           <div className="col-md-6">
             <h4>Mes compétences</h4>
-            {/*  Rendu dynamique des barres */}
             <ul className="list-unstyled">
-              {competences.map(({ skill, level, color }, index) => (
-                <li key={index} className="mb-3">
+              {[
+                { skill: "HTML5", level: 90 },
+                { skill: "CSS3", level: 80 },
+                { skill: "JAVASCRIPT", level: 70 },
+                { skill: "PHP", level: 60 },
+                { skill: "REACT", level: 50 }
+              ].map(({ skill, level }, i) => (
+                <li key={i} className="mb-3">
                   <span>{skill} {level}%</span>
                   <div className="progress">
                     <div
-                      className={`progress-bar ${color}`}
-                      role="progressbar"
+                      className="progress-bar bg-danger"
                       style={{ width: `${level}%` }}
+                      role="progressbar"
                     ></div>
                   </div>
                 </li>
