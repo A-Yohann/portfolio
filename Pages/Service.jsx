@@ -1,6 +1,8 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import courbe from '../src/assets/courbe.jpg';
-
+import code from '../src/assets/code.png'
+import pinceau from '../src/assets/pinceau.png'; 
+import loupe from '../src/assets/loupe.png';
 
 export default function AccueilImage() {
   return (
@@ -19,10 +21,15 @@ export default function AccueilImage() {
       <Container className="my-5">
         <Row className="justify-content-center">
           <Col md={4} className="mb-4">
-            <Card>
+            <Card className="h-100">
               
-              <Card.Body>
-               
+              <Card.Body className="d-flex flex-column text-center">
+              <img
+                src={pinceau}
+                alt="UX Design"
+                style={{ width: '60px', marginBottom: '1rem' }}
+                className="d-block mx-auto"
+                />
                 <Card.Title className='text-center'>UX Design</Card.Title>
                 <Card.Text><p>L'UX Design est une discipline qui consiste à concevoir des produits(sites web,applications mobiles,logiciels,objets connectés etc)
                     en plaçant l'utilisateur au centre des préoccupations. L'objecctif est de rendre l'experience utilisateur ma plus fluide et agréable possible.</p></Card.Text>
@@ -30,19 +37,32 @@ export default function AccueilImage() {
             </Card>
           </Col>
           <Col md={4} className="mb-4">
-            <Card>
+            <Card className="h-100">
               
-              <Card.Body>
+              <Card.Body className="d-flex flex-column text-center">
+                <img
+                src={code}
+                alt="UX Design"
+                style={{ width: '60px', marginBottom: '1rem' }}
+                className="d-block mx-auto"
+                />
+
                 <Card.Title className='text-center'>Développement web</Card.Title>
                 <Card.Text><p>Le développement du sites web consiste ç créer des sites internet en utilisant des langages de programmation
                     (HTML, CSS, JavaScipt, PHP, etc) et des frameworks (Bootstrap, React, Angular, etc)</p></Card.Text>
-              </Card.Body>
+              </Card.Body >
             </Card>
           </Col>
           <Col md={4} className="mb-4">
-            <Card>
+            <Card className="h-100">
               
-              <Card.Body>
+              <Card.Body className="d-flex flex-column text-center">
+                 <img
+                src={loupe}
+                alt="UX Design"
+                style={{ width: '60px', marginBottom: '1rem' }}
+                className="d-block mx-auto"
+                />
                 <Card.Title className='text-center'>Référencement</Card.Title>
                 <Card.Text><p>Le Référencement naturel (SEO) est une technique qui consiste a optimiser un site web pour le faire remonter dans les resultats des moteurs de recherche 
                     (Google, Bing, Yahoo, etc). L'objectif est d'attirer un macimum de visiteur qualifiés sur le site.</p></Card.Text>
