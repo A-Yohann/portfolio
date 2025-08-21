@@ -22,7 +22,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 1.
             </p>
-            <a href="#" className="btn btn-primary">Voir plus</a>
+            <a href="https://morpionyohann.netlify.app" target='_blank' className="btn btn-primary">Voir plus</a>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 2.
             </p>
-            <a href="#" className="btn btn-primary">Voir plus</a>
+            <a href="https://a-yohann.github.io/Pierre-Feuille-Ciseaux/" target="blank" className="btn btn-primary">Voir plus</a>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 3.
             </p>
-            <a href="#" className="btn btn-primary">Voir plus</a>
+            <a href=" https://a-yohann.github.io/calculatrice/" target='_blank' className="btn btn-primary">Voir plus</a>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 4.
             </p>
-            <a href="#" className="btn btn-primary">Voir plus</a>
+            <a href="https://a-yohann.github.io/juste-prix/" target='_blank' className="btn btn-primary">Voir plus</a>
           </div>
         </div>
 

@@ -1,4 +1,7 @@
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
+import Portfolio from '../../Pages/Portfolio';
+import Home from './Home';
 
 const Footer = () => {
   return (
@@ -34,29 +37,29 @@ const Footer = () => {
             <h5>Liens utiles</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!" className="text-white text-decoration-none">
+                <Link to="/" className="text-white text-decoration-none">
                   Accueil
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#!" className="text-white text-decoration-none">
+                <Link to="/services" className="text-white text-decoration-none">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#!" className="text-white text-decoration-none">
+                <Link to="/Portfolio" className="text-white text-decoration-none">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#!" className="text-white text-decoration-none">
+                <Link to="/Contact" className="text-white text-decoration-none">
                   Me contacter
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#!" className="text-white text-decoration-none">
+                <Link to="/mention" className="text-white text-decoration-none">
                   Mentions légales
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -66,22 +69,22 @@ const Footer = () => {
             <h5>Mes dernieres realisation</h5>
             <ul className='list-unstyled'>
               <li className='text-white text-decoration-none'>
-                Fresh food
+                Morpion
               </li>
               <li className='text-white text-decoration-none'>
-                Restaurant akira
+                Pierre,Feuille,Ciseaux
               </li>
               <li className='text-white text-decoration-none'>
-                Espaces bien etre 
+                Calculatrice 
               </li>
               <li className='text-white text-decoration-none'>
-                SEO
+                Juste Prix
               </li>
               <li className='text-white text-decoration-none'>
-                Creation d'une API
+                A venir
               </li>
               <li className='text-white text-decoration-none'>
-                Maquette d'un site
+                A venir 
               </li>
             </ul>
           </div>
