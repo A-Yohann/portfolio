@@ -6,6 +6,7 @@ import Header from './compenants/header';
 import Footer from './compenants/footer';
 import Home from './compenants/Home';
 import Service from '../Pages/Service';
+import ContactForm from '../Pages/Contact';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
        <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/services' element={<Service />} />
+        <Route path='/contact' element={<ContactForm/>} />
        </Routes>
        
        <Footer/>
