@@ -81,7 +81,7 @@ const Footer = () => {
                 Juste Prix
               </li>
               <li className='text-white text-decoration-none'>
-                A venir
+                Le jeu du pendu
               </li>
               <li className='text-white text-decoration-none'>
                 A venir 

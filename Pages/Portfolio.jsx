@@ -4,6 +4,7 @@ import ciseaux from '../src/assets/ciseaux.png';
 import calculatrice from '../src/assets/calculatrice.png';
 import morpion from '../src/assets/morpion.png';
 import manette from "../src/assets/manette.png";
+import pendu from "../src/assets/pendu.png";
 export default memo(function Portfolio() {
   return (
     <> <img className="img-fluid hero-img w-100" src={courbe} alt="image développeur web" />
@@ -59,6 +60,18 @@ export default memo(function Portfolio() {
               Contenu de la carte numéro 4.
             </p>
             <a href="https://a-yohann.github.io/juste-prix/" target='_blank' className="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+
+        {/*Carte 5*/}
+        <div className="card" style={{ width: '18rem' }}>
+          <img src={pendu} alt="image du jeu du pendu " className="card-img-top" />
+          <div className="card-body">
+            <h5 className="card-title">Le Pendu </h5>
+            <p className="card-text">
+              Contenu de la carte numéro 5.
+            </p>
+            <a href="https://a-yohann.github.io/le-pendu/" target='_blank' className="btn btn-primary">Voir plus</a>
           </div>
         </div>
 
