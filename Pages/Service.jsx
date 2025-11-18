@@ -12,7 +12,7 @@ export default function AccueilImage() {
         <img className="img-fluid hero-img w-100" src={courbe} alt="image développeur web" />
         
         <div style={{marginTop: '100px', textAlign: 'center'}}>
-          <h1>Mon offre de services</h1>
+          <h1>Mes competences acquise ou en cours d'acquisition</h1>
           <p >Voici les prestations sur lesquelles je peux intervenir </p>
         </div>
       </div>
@@ -31,8 +31,7 @@ export default function AccueilImage() {
                 className="d-block mx-auto"
                 />
                 <Card.Title className='text-center'>UX Design</Card.Title>
-                <Card.Text><p>L'UX Design est une discipline qui consiste à concevoir des produits(sites web,applications mobiles,logiciels,objets connectés etc)
-                    en plaçant l'utilisateur au centre des préoccupations. L'objecctif est de rendre l'experience utilisateur ma plus fluide et agréable possible.</p></Card.Text>
+                <Card.Text><p>Je sais me servir de figma, j'ai deja fais plusieur maquette, pour la formation ou pour des projets perso</p></Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -48,8 +47,7 @@ export default function AccueilImage() {
                 />
 
                 <Card.Title className='text-center'>Développement web</Card.Title>
-                <Card.Text><p>Le développement du sites web consiste ç créer des sites internet en utilisant des langages de programmation
-                    (HTML, CSS, JavaScipt, PHP, etc) et des frameworks (Bootstrap, React, Angular, etc)</p></Card.Text>
+                <Card.Text><p>Jusqu'a maintenant j'ai appris HTML 5, CSS 3, Tailwind, JavaScript</p></Card.Text>
               </Card.Body >
             </Card>
           </Col>

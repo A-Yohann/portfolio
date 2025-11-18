@@ -8,9 +8,9 @@ export default function Home() {
   const competences = [
     { skill: 'HTML5', level: 90, color: 'bg-danger' },
     { skill: 'CSS3', level: 80, color: 'bg-primary' },
-    { skill: 'JavaScript', level: 70, color: 'bg-info' },
-    { skill: 'PHP', level: 60, color: 'bg-warning' },
-    { skill: 'React', level: 50, color: 'bg-success' }
+    { skill: 'JavaScript', level: 40, color: 'bg-info' },
+    { skill: 'PHP', level: 0, color: 'bg-warning' },
+    { skill: 'React', level: 10, color: 'bg-success' }
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function Home() {
         <img className="img-fluid hero-img w-100" src={banane} alt="image développeur web" />
         
         <div className="hero-text position-absolute top-50 start-50 translate-middle text-center">
-          <h1>Bonjour, je suis John Doe</h1>
+          <h1>Bonjour, je suis Yohann</h1>
           <h3>Développeur web fullstack</h3>
           <a href="#apropos" className="btn btn-danger mt-3">En savoir plus</a>
         </div>
@@ -34,8 +34,8 @@ export default function Home() {
             <hr color='bg-primary'/>
             <img className="img-fluid hero-img w-100" src={dev2} alt="image développeur web" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, necessitatibus. <br/>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, necessitatibus.
+              Bonjour, je suis Yohann, étudiant a Talis Buisness School a Perigueux. Je suis en formation DWMM, avant de commencer la formation j'ai appris les differents languages en autodidact. J'ameliorais mon Portfolio avec les compétences aquise durant la formation <br/>
+              
             </p>
           </div>
           <div className="col-md-6">

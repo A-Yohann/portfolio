@@ -16,13 +16,14 @@ function App() {
   return (
     <>
 
-       <Header/>
+    <Header/>
        <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/services' element={<Service />} />
         <Route path='/contact' element={<ContactForm/>} />
         <Route path='/mention' element={<Mentionlegales/>} />
         <Route path='/portfolio' element={<Portfolio/>} />
+        
        </Routes>
        
        <Footer/>
