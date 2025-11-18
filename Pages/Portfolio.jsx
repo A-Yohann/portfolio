@@ -12,7 +12,7 @@ export default memo(function Portfolio() {
     <div className="container my-5">
       {/* Titre centré */}
       <h1 className="text-center mb-4">Portfolio</h1>
-      <p className='text-center mb-4 text-lg'>Voici quelques projets que j'ai pu réaliser pour m'entrainer</p>
+      <p className='text-center mb-4 '>Voici quelques projets que j'ai pu réaliser pour m'entrainer</p>
       <h2 className='text-center mb-4'> Mes projets (jeu) realiser </h2>
 
       <div className="d-flex justify-content-center flex-wrap gap-4">
@@ -75,19 +75,6 @@ export default memo(function Portfolio() {
             <a href="https://a-yohann.github.io/le-pendu/" target='_blank' className="btn btn-primary">Voir plus</a>
           </div>
         </div>
-
-        {/*Carte 6*/}
-        <div className="card" style={{ width: '18rem' }}>
-            <img src={pendu} alt="image du jeu du pendu " className="card-img-top" />
-            <div className="card-body text-center">
-              <h5 className="card-title">Le Pendu </h5>
-              <p className="card-text"> Contenu de la carte numéro 5.</p>
-                  <a href="https://a-yohann.github.io/le-pendu/" target='_blank' className="btn btn-primary ">Voir plus</a>
-            </div>
-          </div>
-
-
-
       </div>
     </div>
     </>
