@@ -11,20 +11,20 @@ const Footer = () => {
         <div className="row">
           
           <div className="col-md-4 mb-3">
-            <h5>John Doe</h5>
+            <h5>Yohann</h5>
             <address>
               <ul className='list-unstyled'>
                 <li className='text-white text-decoration-none'>
-                  40 rue Laure Dielbold
+                  16444 Route de Marsal
                 </li>
                 <li className='text-white  text-decoration-none'>
-                  69009 Lyon, France 
+                  24130, La Force, France 
                 </li>
                 <li className='text-white text-decoration-none'>
-                  10 20 30 40 50 
+                  06.31.28.44.64
                 </li>
                 <li className='text-white text-decoration-none'>
-                  john.doe@gamil.com
+                  at.yohann@gmail.com
                 </li>
               </ul>
             </address>  
@@ -84,7 +84,10 @@ const Footer = () => {
                 Le jeu du pendu
               </li>
               <li className='text-white text-decoration-none'>
-                A venir 
+                Projet Expedition 33
+              </li>
+              <li className='text-white text-decoration-none'>
+                Projet Baldur's Gate 3
               </li>
             </ul>
           </div>

@@ -5,6 +5,7 @@ import calculatrice from '../src/assets/calculatrice.png';
 import morpion from '../src/assets/morpion.png';
 import manette from "../src/assets/manette.png";
 import pendu from "../src/assets/pendu.png";
+import webDesigner from"../src/assets/webdesign.png";
 export default memo(function Portfolio() {
   return (
     <> <img className="img-fluid hero-img w-100" src={courbe} alt="image développeur web" />
@@ -77,6 +78,27 @@ export default memo(function Portfolio() {
         </div>
       </div>
     </div>
+    <div className='container my-5'>
+        <h2 className='text-center mb-4'>Voici des projets realiser en html/css</h2>
+        <div className="d-flex justify-content-center flex-wrap gap-4">
+              <div className="card" style={{ width: '18rem' }}>
+              <img src={webDesigner} alt="image d'un cahier et d'ordi " className="card-img-top" />
+              <div className="card-body text-center">
+                <h5 className="card-title"> Projet Expedition 33 </h5>
+                <a href="https://a-yohann.github.io/projet-expedition-33/" target='_blank' className="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+
+
+              <div className="card" style={{ width: '18rem' }}>
+              <img src={webDesigner} alt="image d'un cahier et d'ordi " className="card-img-top" />
+              <div className="card-body text-center">
+                <h5 className="card-title"> Projet Baldu's Gate 3 </h5>
+                <a href="https://a-yohann.github.io/projet-baldur-gate-3/" target='_blank' className="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+      </div>
     </>
   );
 });

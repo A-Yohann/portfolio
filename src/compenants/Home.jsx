@@ -2,6 +2,7 @@ import React from 'react';
 import banane from '../assets/dev.jpg';
 import '../App.css';
 import dev2 from '../assets/dev2.jpg';
+import webDesigner from "../assets/webdesign.png"
 
 export default function Home() {
   //  Déclaration correcte du tableau
