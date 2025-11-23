@@ -89,6 +89,12 @@ const Footer = () => {
               <li className='text-white text-decoration-none'>
                 Projet Baldur's Gate 3
               </li>
+              <li className='text-white text-decoration-none'>
+                Porjet Magic
+              </li>
+              <li className='text-white text-decoration-none'>
+                Espace Renovation
+              </li>
             </ul>
           </div>
         </div>
