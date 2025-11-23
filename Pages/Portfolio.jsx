@@ -93,7 +93,7 @@ export default memo(function Portfolio() {
               <div className="card" style={{ width: '18rem' }}>
               <img src={webDesigner} alt="image d'un cahier et d'ordi " className="card-img-top" />
               <div className="card-body text-center">
-                <h5 className="card-title"> Projet Baldu's Gate 3 </h5>
+                <h5 className="card-title"> Projet Baldur's Gate 3 </h5>
                 <a href="https://a-yohann.github.io/projet-baldur-gate-3/" target='_blank' className="btn btn-primary">Voir plus</a>
               </div>
             </div>
