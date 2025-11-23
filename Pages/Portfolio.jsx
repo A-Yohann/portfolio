@@ -20,7 +20,7 @@ export default memo(function Portfolio() {
         {/* Carte 1 */}
         <div className="card" style={{ width: '18rem' }}>
           <img src={morpion} alt="image de morpion" className="card-img-top" />
-          <div className="card-body">
+          <div className="card-body text-center">
             <h5 className="card-title">Morpion</h5>
             <p className="card-text">
               Contenu de la carte numéro 1.
@@ -32,7 +32,7 @@ export default memo(function Portfolio() {
         {/* Carte 2 */}
         <div className="card" style={{ width: '18rem' }}>
           <img src={ciseaux} alt="image de ciseaux" className="card-img-top" />
-          <div className="card-body">
+          <div className="card-body text-center">
             <h5 className="card-title">Pierre Feuille Ciseaux</h5>
             <p className="card-text">
               Contenu de la carte numéro 2.
@@ -44,7 +44,7 @@ export default memo(function Portfolio() {
         {/* Carte 3 */}
         <div className="card" style={{ width: '18rem' }}>
           <img src={calculatrice} alt="image d'une calculatrice" className="card-img-top" />
-          <div className="card-body">
+          <div className="card-body text-center">
             <h5 className="card-title">Calculatrice</h5>
             <p className="card-text">
               Contenu de la carte numéro 3.
@@ -56,7 +56,7 @@ export default memo(function Portfolio() {
         {/*Carte 4*/}
         <div className="card" style={{ width: '18rem' }}>
           <img src={manette} alt="image d'une manette " className="card-img-top" />
-          <div className="card-body">
+          <div className="card-body text-center">
             <h5 className="card-title">Le juste Prix </h5>
             <p className="card-text">
               Contenu de la carte numéro 4.
