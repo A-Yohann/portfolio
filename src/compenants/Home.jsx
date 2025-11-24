@@ -5,14 +5,6 @@ import dev2 from '../assets/dev2.jpg';
 
 
 export default function Home() {
-  //  Déclaration correcte du tableau
-  const competences = [
-    { skill: 'HTML5', level: 90, color: 'bg-danger' },
-    { skill: 'CSS3', level: 80, color: 'bg-primary' },
-    { skill: 'JavaScript', level: 40, color: 'bg-info' },
-    { skill: 'PHP', level: 0, color: 'bg-warning' },
-    { skill: 'React', level: 10, color: 'bg-success' }
-  ];
 
   return (
     <>

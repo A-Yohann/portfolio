@@ -55,30 +55,31 @@ export default memo(function Portfolio() {
         <h2 className='text-center mb-4'>Mes projets (jeu) réaliser</h2>
 
         {/* Carrousel des projets jeux */}
-        <Carousel fade interval={4000} className="my-5">
+        <Carousel fade interval={5000} className="my-5" controls={true} indicators={false}  nextIcon ={<span className='carousel-control-next-icon custom-arrow-color'/>} >
           {projectsJeux.map((project, index) => (
-            <Carousel.Item key={index}>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img
-                  className="d-block"
-                  src={project.image}
-                  alt={project.title}
-                  style={{
-                    maxHeight: '250px',  
-                    width: 'auto',
-                    objectFit: 'cover',
-                    margin: '0 auto'
-                  }}
-                />
-              </div>
-              <Carousel.Caption className=" p-3 rounded">
-                {/* <h3>{project.title}</h3>
-                <p>{project.description}</p> */}
-                <Button variant="light" href={project.link} target="_blank" className='btn btn-cartoon'>Voir plus</Button>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))}
-        </Carousel>
+        <Carousel.Item key={index}>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <img
+                className="d-block"
+                src={project.image}
+                alt={project.title}
+                style={{
+                  maxHeight: '250px',
+                  width: 'auto',
+                  objectFit: 'cover',
+                  margin: '0 auto'
+          }}
+        />
+      </div>
+      <Carousel.Caption className="p-3 rounded">
+        <Button variant="light" href={project.link} target="_blank" className="btn btn-cartoon">
+          Voir plus
+        </Button>
+      </Carousel.Caption>
+    </Carousel.Item>
+  ))}
+</Carousel>
+
       </div>
 
       {/* Partie HTML/CSS */}
