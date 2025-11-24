@@ -6,6 +6,11 @@ import morpion from '../src/assets/morpion.png';
 import manette from "../src/assets/manette.png";
 import pendu from "../src/assets/pendu.png";
 import webDesigner from"../src/assets/webdesign.png";
+import magic from "../src/assets/magic.png";
+import expedition from "../src/assets/expedition33.avif"
+import logo from "../src/assets/bureau.jpg";
+import bg3 from "../src/assets/bg3.png";
+
 export default memo(function Portfolio() {
   return (
     <> <img className="img-fluid hero-img w-100" src={courbe} alt="image développeur web" />
@@ -83,7 +88,7 @@ export default memo(function Portfolio() {
 
         <div className="d-flex justify-content-center flex-wrap gap-4">
               <div className="card" style={{ width: '18rem' }}>
-              <img src={webDesigner} alt="image d'un cahier et d'ordi " className="card-img-top" />
+              <img src={expedition} alt="image d'un cahier et d'ordi " className="card-img-top" style={{height: '200px',width: '100%',objectFit: 'cover',margin: '0 auto',display: 'block',background:'black'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Expedition 33 </h5>
                 <a href="https://a-yohann.github.io/projet-expedition-33/" target='_blank' className="btn btn-primary">Voir plus</a>
@@ -91,7 +96,7 @@ export default memo(function Portfolio() {
             </div>
 
             <div className="card" style={{ width: '18rem' }}>
-              <img src={webDesigner} alt="image d'un cahier et d'ordi " className="card-img-top" />
+                <img src={bg3} alt="image d'un cahier et d'ordi"className="card-img-top"style={{height: '200px',width: '100%',objectFit: 'cover',margin: '0 auto',display: 'block',background:'black'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Baldur's Gate 3 </h5>
                 <a href="https://a-yohann.github.io/projet-baldur-gate-3/" target='_blank' className="btn btn-primary">Voir plus</a>
@@ -99,7 +104,7 @@ export default memo(function Portfolio() {
             </div>
 
             <div className="card" style={{ width: '18rem' }}>
-              <img src={webDesigner} alt="image d'un cahier et d'ordi " className="card-img-top" />
+              <img src={magic} alt="image d'un cahier et d'ordi " className="card-img-top" style={{height:'200px',objectFit:'cover'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Magic </h5>
                 <a href="https://a-yohann.github.io/projet-magic/" target='_blank' className="btn btn-primary">Voir plus</a>
@@ -107,7 +112,7 @@ export default memo(function Portfolio() {
             </div>
 
             <div className="card" style={{ width: '18rem' }}>
-              <img src={webDesigner} alt="image d'un cahier et d'ordi " className="card-img-top" />
+              <img src={logo} alt="image d'un cahier et d'ordi " className="card-img-top" style={{height: '200px',width: '100%',objectFit: 'cover',margin: '0 auto',display: 'block',background:'black'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Espace Renovation </h5>
                 <a href="https://a-yohann.github.io/Projet-Espace-Renovation/" target='_blank' className="btn btn-primary">Voir plus</a>
