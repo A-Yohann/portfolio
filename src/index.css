@@ -1,0 +1,16 @@
+.btn-cartoon {
+  border: 2px solid #000 !important;
+  border-radius: 8px !important;
+  font-weight: bold;
+  color: #000 !important;
+  padding: 5px 12px !important;   /* plus petit */
+  font-size: 0.85rem !important;  /* texte plus petit */
+  box-shadow: 3px 3px 0 #000;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+}
+
+.btn-cartoon:hover {
+  box-shadow: 4px 4px 0 #000;
+  transform: translate(-1px, -1px);
+}

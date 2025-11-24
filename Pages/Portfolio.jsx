@@ -30,7 +30,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 1.
             </p>
-            <a href="https://morpionyohann.netlify.app" target='_blank' className="btn btn-primary">Voir plus</a>
+            <a href="https://morpionyohann.netlify.app" target='_blank' className="btn btn-danger btn-cartoon">Voir plus</a>
           </div>
         </div>
 
@@ -42,7 +42,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 2.
             </p>
-            <a href="https://a-yohann.github.io/Pierre-Feuille-Ciseaux/" target="blank" className="btn btn-primary">Voir plus</a>
+            <a href="https://a-yohann.github.io/Pierre-Feuille-Ciseaux/" target="blank" className="btn btn-danger btn-cartoon">Voir plus</a>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 3.
             </p>
-            <a href=" https://a-yohann.github.io/calculatrice/" target='_blank' className="btn btn-primary">Voir plus</a>
+            <a href=" https://a-yohann.github.io/calculatrice/" target='_blank' className="btn btn-danger btn-cartoon">Voir plus</a>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 4.
             </p>
-            <a href="https://a-yohann.github.io/juste-prix/" target='_blank' className="btn btn-primary">Voir plus</a>
+            <a href="https://a-yohann.github.io/juste-prix/" target='_blank' className="btn btn-danger btn-cartoon">Voir plus</a>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ export default memo(function Portfolio() {
             <p className="card-text">
               Contenu de la carte numéro 5.
             </p>
-            <a href="https://a-yohann.github.io/le-pendu/" target='_blank' className="btn btn-primary">Voir plus</a>
+            <a href="https://a-yohann.github.io/le-pendu/" target='_blank' className="btn btn-danger btn-cartoon">Voir plus</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default memo(function Portfolio() {
               <img src={expedition} alt="image d'un cahier et d'ordi " className="card-img-top" style={{height: '200px',width: '100%',objectFit: 'cover',margin: '0 auto',display: 'block',background:'black'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Expedition 33 </h5>
-                <a href="https://a-yohann.github.io/projet-expedition-33/" target='_blank' className="btn btn-primary">Voir plus</a>
+                <a href="https://a-yohann.github.io/projet-expedition-33/" target='_blank' className="btn btn-warning btn-cartoon">Voir plus</a>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export default memo(function Portfolio() {
                 <img src={bg3} alt="image d'un cahier et d'ordi"className="card-img-top"style={{height: '200px',width: '100%',objectFit: 'cover',margin: '0 auto',display: 'block',background:'black'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Baldur's Gate 3 </h5>
-                <a href="https://a-yohann.github.io/projet-baldur-gate-3/" target='_blank' className="btn btn-primary">Voir plus</a>
+                <a href="https://a-yohann.github.io/projet-baldur-gate-3/" target='_blank' className="btn btn-warning btn-cartoon">Voir plus</a>
               </div>
             </div>
 
@@ -107,7 +107,7 @@ export default memo(function Portfolio() {
               <img src={magic} alt="image d'un cahier et d'ordi " className="card-img-top" style={{height:'200px',objectFit:'cover'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Magic </h5>
-                <a href="https://a-yohann.github.io/projet-magic/" target='_blank' className="btn btn-primary">Voir plus</a>
+                <a href="https://a-yohann.github.io/projet-magic/" target='_blank' className="btn btn-warning btn-cartoon">Voir plus</a>
               </div>
             </div>
 
@@ -115,7 +115,7 @@ export default memo(function Portfolio() {
               <img src={logo} alt="image d'un cahier et d'ordi " className="card-img-top" style={{height: '200px',width: '100%',objectFit: 'cover',margin: '0 auto',display: 'block',background:'black'}} />
               <div className="card-body text-center">
                 <h5 className="card-title"> Projet Espace Renovation </h5>
-                <a href="https://a-yohann.github.io/Projet-Espace-Renovation/" target='_blank' className="btn btn-primary">Voir plus</a>
+                <a href="https://a-yohann.github.io/Projet-Espace-Renovation/" target='_blank' className="btn btn-warning btn-cartoon">Voir plus</a>
               </div>
             </div>
 

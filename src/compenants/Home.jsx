@@ -35,33 +35,33 @@ export default function Home() {
       {/* À propos + compétences */}
       <section id="apropos" className="container my-5">
         <div className="row shadow p-4 bg-white rounded">
-          <div className="col-md-6">
+          <div className="col-12 mb-4">
             <h4>A propos</h4>
             <hr color='bg-primary'/>
-            <img className="img-fluid hero-img w-100" src={dev2} alt="image développeur web" />
-            <p>
+            <img className="img-fluid hero-img w-100" src={dev2} alt="image développeur web"style={{ maxWidth: '600px', height: 'auto', display: 'block', margin: '0 auto' }} 
+/>
+            <p className='mt-4'>
               Bonjour, je suis Yohann, étudiant a Talis Buisness School a Perigueux. Je suis en formation DWMM, avant de commencer la formation j'ai appris les differents languages en autodidact. J'ameliorais mon Portfolio avec les compétences aquise durant la formation <br/>
             </p>
-            <a href="https://a-yohann.github.io/C.V-yohann/" target='_blank' className="btn btn-primary">Consulter le CV </a>
+            <div className='d-flex justify-content-center mt-3'>
+              <a href="https://a-yohann.github.io/C.V-yohann/" target='_blank' className="btn btn-danger btn-cartoon ">Consulter le CV </a>
+            </div>
           </div>
-          <div className="col-md-6">
-            <h4>Mes compétences</h4>
-            <hr/>
-            {/*  Rendu dynamique des barres */}
+          <div className="col12">
             <ul className="list-unstyled">
-              {competences.map(({ skill, level, color }, index) => (
-                <li key={index} className="mb-3">
-                  <span>{skill} {level}%</span>
-                  <div className="progress">
-                    <div
-                      className={`progress-bar ${color}`}
-                      role="progressbar"
-                      style={{ width: `${level}%` }}
-                    ></div>
-                  </div>
-                </li>
-              ))}
+              <h4>Mes compétences</h4>
+<hr/>
+
+<div className="skills-bounce-container d-flex flex-wrap gap-4 justify-content-center mt-4">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="skill-bounce" alt="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="skill-bounce" alt="CSS3"  style={{width:'100px'}}/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="skill-bounce" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="skill-bounce" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" className="skill-bounce" alt="PHP" />
+</div>
+
             </ul>
+
           </div>
         </div>
       </section>
