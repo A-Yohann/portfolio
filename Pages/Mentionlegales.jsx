@@ -11,11 +11,11 @@ export default memo(function Mentionlegales() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Éditeur du site</Accordion.Header>
             <Accordion.Body>
-              <strong>John Doe</strong><br />
-              📁 40 rue Laure Diebold<br />
-              📍 69009 Lyon, France<br />
-              📞 10 20 30 40 50<br />
-              📧 john.doe@gmail.com
+              <strong>Yohann</strong><br />
+              📁 1644 Route de Marsal<br />
+              📍 24130 La Force, France<br />
+              📞 06.31.28.44.64<br />
+              📧 at.yohann@gmail.com
             </Accordion.Body>
           </Accordion.Item>
 
@@ -29,7 +29,7 @@ export default memo(function Mentionlegales() {
           <Accordion.Item eventKey="2">
             <Accordion.Header>Crédits</Accordion.Header>
             <Accordion.Body>
-              Ce site à été réaliser par moi meme dans un but pédagogique afin d'approfondir mes competences apprise par moi meme avant de me lancer dans une formation adapté 
+              Ce site a été réalisé par moi-même dans un but pédagogique afin d'approfondir mes compétences acquises en autodidacte avant de me lancer dans une formation adaptée.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

@@ -16,7 +16,7 @@ const ContactPage = () => {
             <h5 className="border-bottom border-primary pb-2 mb-4">Formulaire de contact</h5>
             <Form>
               <Form.Control className="mb-3" type="text" placeholder="Votre nom" />
-              <Form.Control className="mb-3" type="email" placeholder="Votre adresse email" />
+              <Form.Control className="mb-3" type="email" placeholder="Votre adresse e-mail" />
               <Form.Control className="mb-3" type="tel" placeholder="Votre numéro de téléphone" />
               <Form.Control className="mb-3" type="text" placeholder="Sujet" />
               <Form.Control className="mb-3" as="textarea" rows={4} placeholder="Votre message" />
@@ -29,7 +29,7 @@ const ContactPage = () => {
             <address>
               <strong>Yohann</strong><br />
               📍 1644 Route de Marsal<br />
-              24130 La force, France<br />
+              24130 La Force, France<br />
               ☎️ 06.31.28.44.64<br />
               ✉️ at.yohann@gmail.com
             </address>
@@ -45,7 +45,6 @@ const ContactPage = () => {
         </Row>
       </Card>
     </Container>
-    
   );
 };
 

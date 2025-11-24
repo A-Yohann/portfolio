@@ -12,7 +12,7 @@ export default function Home() {
           className="img-fluid w-100" 
           style={{ maxHeight: '70vh', objectFit: 'cover' }} 
           src={banane} 
-          alt="image développeur web" 
+          alt="Image développeur web" 
         />
         <div className="hero-text position-absolute top-50 start-50 translate-middle text-center">
           <h1>Bonjour, je suis Yohann</h1>
@@ -30,7 +30,7 @@ export default function Home() {
             <img 
               className="img-fluid rounded w-100" 
               src={dev2} 
-              alt="image développeur web"
+              alt="Image développeur web"
               style={{ maxHeight: '400px', objectFit: 'cover' }}
             />
           </div>
@@ -38,27 +38,27 @@ export default function Home() {
           {/* Colonne droite : texte */}
           <div className="col-md-6">
             {/* Texte principal */}
-            <h4>A propos</h4>
+            <h4>À propos</h4>
             <hr/>
             <p>
               Bonjour, je suis Yohann, étudiant à Talis Business School à Périgueux. 
-              Je suis en formation DWMM. Avant de commencer cette formation, 
-              j'ai appris différents langages en autodidacte. J'améliore mon Portfolio 
+              Je suis actuellement en formation DWWM. Avant de commencer cette formation, 
+              j'ai appris différents langages en autodidacte. Je continue d'améliorer mon portfolio 
               avec les compétences acquises durant la formation.
             </p>
             <div className='d-flex justify-content-start mt-3 mb-4'>
-              <a href="https://a-yohann.github.io/C.V-yohann/" target='_blank' className="btn btn-danger btn-cartoon">
+              <a href="https://a-yohann.github.io/C.V-yohann/" target='_blank' rel="noopener noreferrer" className="btn btn-danger btn-cartoon">
                 Consulter le CV
               </a>
             </div>
 
-            {/* Nouveau texte : Mon savoir-faire */}
+            {/* Mon savoir-faire */}
             <h5 className="mt-4">Mon savoir-faire</h5>
             <hr/>
             <p>
               Je développe des applications web complètes en utilisant HTML, CSS, 
-              JavaScript, (PHP bientot). Je sais également travailler sur des projets 
-              responsive et optimiser l’expérience utilisateur pour tous les écrans.
+              JavaScript (PHP bientôt). Je sais également créer des projets 
+              responsive et optimiser l’expérience utilisateur sur tous les écrans.
             </p>
           </div>
         </div>
