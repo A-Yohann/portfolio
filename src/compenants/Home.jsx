@@ -2,7 +2,7 @@ import React from 'react';
 import banane from '../assets/dev.jpg';
 import '../App.css';
 import dev2 from '../assets/dev2.jpg';
-import webDesigner from "../assets/webdesign.png"
+
 
 export default function Home() {
   //  Déclaration correcte du tableau
@@ -28,7 +28,7 @@ export default function Home() {
   <div className="hero-text position-absolute top-50 start-50 translate-middle text-center">
     <h1>Bonjour, je suis Yohann</h1>
     <h3>Développeur web fullstack</h3>
-    <a href="#apropos" className="btn btn-danger mt-3">En savoir plus</a>
+    <a href="#apropos" className="btn btn-cartoon mt-3">En savoir plus</a>
   </div>
 </section>
 

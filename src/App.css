@@ -1,15 +1,17 @@
+
+
 .skills-bounce-container img {
   width: 70px;
   height: 70px;
   object-fit: contain;
 }
 
-/* Animation rebond */
+
 .skill-bounce {
   animation: bounce 1.5s infinite ease-in-out;
 }
 
-/* Délais différents pour un effet naturel */
+
 .skill-bounce:nth-child(1) { animation-delay: 0s; }
 .skill-bounce:nth-child(2) { animation-delay: 0.2s; }
 .skill-bounce:nth-child(3) { animation-delay: 0.4s; }
@@ -27,17 +29,17 @@
 
 
 .skills-bounce-container img {
-  width: 120px;          /* taille plus grande */
-  height: 120px;         /* conserve proportion avec object-fit */
+  width: 120px;          
+  height: 120px;         
   object-fit: contain;
 }
 
-/* Animation rebond */
+
 .skill-bounce {
   animation: bounce 1.5s infinite ease-in-out;
 }
 
-/* Délais différents pour un effet naturel */
+
 .skill-bounce:nth-child(1) { animation-delay: 0s; }
 .skill-bounce:nth-child(2) { animation-delay: 0.2s; }
 .skill-bounce:nth-child(3) { animation-delay: 0.4s; }
@@ -49,7 +51,7 @@
   50% { transform: translateY(-20px); } /* rebond plus haut */
 }
 
-/* Navbar générale */
+
 .navbar-fun {
   background: linear-gradient(135deg, #ff6ec4, #7873f5);
   padding: 0.5rem 1rem;
@@ -58,7 +60,7 @@
   border-radius: 0 0 15px 15px;
 }
 
-/* Logo / marque */
+
 .brand-fun {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   font-size: 1.8rem;
@@ -72,7 +74,7 @@
   transform: scale(1.1) rotate(-2deg);
 }
 
-/* Liens de nav */
+
 .nav-fun-links .nav-link {
   color: #fff !important;
   font-weight: bold;
@@ -81,7 +83,7 @@
   transition: all 0.3s ease;
 }
 
-/* Effet hover cartoon/fun */
+
 .nav-fun-links .nav-link::after {
   content: '';
   display: block;
@@ -105,7 +107,7 @@
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-/* Toggle button couleur fun */
+
 .navbar-toggler {
   border-color: #fff;
 }
@@ -114,3 +116,20 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);   
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
+}
+
+.btn-cartoon {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-cartoon:hover {
+  transform: scale(1.1); 
+  background-color: #ffc107; 
+}

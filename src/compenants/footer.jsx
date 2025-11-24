@@ -1,110 +1,62 @@
 import React, { memo } from 'react';
-import { Link } from 'react-router-dom';
-import Portfolio from '../../Pages/Portfolio';
-import Home from './Home';
+import { NavLink } from 'react-router-dom';
+import { Container, Nav } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4 mt-auto w-100">
-
-<div className="container">
-        <div className="row">
+    <footer className="navbar-fun mt-auto w-100">
+      <Container fluid>
+        <div className="d-flex flex-column flex-lg-row justify-content-evenly align-items-start py-3">
           
-          <div className="col-md-4 mb-3">
-            <h5>Yohann</h5>
+          {/* Informations contact */}
+          <div className="mb-2">
+            <h5 className="brand-fun">Yohann</h5>
             <address>
-              <ul className='list-unstyled'>
-                <li className='text-white text-decoration-none'>
-                  16444 Route de Marsal
-                </li>
-                <li className='text-white  text-decoration-none'>
-                  24130, La Force, France 
-                </li>
-                <li className='text-white text-decoration-none'>
-                  06.31.28.44.64
-                </li>
-                <li className='text-white text-decoration-none'>
-                  at.yohann@gmail.com
-                </li>
+              <ul className="list-unstyled">
+                <li>16444 Route de Marsal</li>
+                <li>24130, La Force, France</li>
+                <li>06.31.28.44.64</li>
+                <li>at.yohann@gmail.com</li>
               </ul>
-            </address>  
-            {/*ajout de logo*/}
-            
+            </address>
           </div>
 
-          
-          <div className="col-md-4 mb-3">
+          {/* Liens utiles */}
+          <div className="mb-2">
             <h5>Liens utiles</h5>
+            <Nav className="nav-fun-links flex-column">
+              <Nav.Link as={NavLink} to="/" end>Accueil</Nav.Link>
+              <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
+              <Nav.Link as={NavLink} to="/portfolio">Portfolio</Nav.Link>
+              <Nav.Link as={NavLink} to="/contact">Me contacter</Nav.Link>
+              <Nav.Link as={NavLink} to="/mention">Mentions légales</Nav.Link>
+            </Nav>
+          </div>
+
+          {/* Dernières réalisations */}
+          <div className="mb-2">
+            <h5>Mes dernières réalisations</h5>
             <ul className="list-unstyled">
-              <li>
-                <Link to="/" className="text-white text-decoration-none">
-                  Accueil
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-white text-decoration-none">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/Portfolio" className="text-white text-decoration-none">
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link to="/Contact" className="text-white text-decoration-none">
-                  Me contacter
-                </Link>
-              </li>
-              <li>
-                <Link to="/mention" className="text-white text-decoration-none">
-                  Mentions légales
-                </Link>
-              </li>
+              <li>Morpion</li>
+              <li>Pierre, Feuille, Ciseaux</li>
+              <li>Calculatrice</li>
+              <li>Juste Prix</li>
+              <li>Le jeu du pendu</li>
+              <li>Projet Expedition 33</li>
+              <li>Projet Baldur's Gate 3</li>
+              <li>Projet Magic</li>
+              <li>Espace Renovation</li>
             </ul>
           </div>
 
-          
-          <div className="col-md-4 mb-3">
-            <h5>Mes dernieres realisation</h5>
-            <ul className='list-unstyled'>
-              <li className='text-white text-decoration-none'>
-                Morpion
-              </li>
-              <li className='text-white text-decoration-none'>
-                Pierre,Feuille,Ciseaux
-              </li>
-              <li className='text-white text-decoration-none'>
-                Calculatrice 
-              </li>
-              <li className='text-white text-decoration-none'>
-                Juste Prix
-              </li>
-              <li className='text-white text-decoration-none'>
-                Le jeu du pendu
-              </li>
-              <li className='text-white text-decoration-none'>
-                Projet Expedition 33
-              </li>
-              <li className='text-white text-decoration-none'>
-                Projet Baldur's Gate 3
-              </li>
-              <li className='text-white text-decoration-none'>
-                Porjet Magic
-              </li>
-              <li className='text-white text-decoration-none'>
-                Espace Renovation
-              </li>
-            </ul>
-          </div>
         </div>
 
         <hr className="bg-white" />
-
-        <div className="text-center">
+        <div className="text-center text-white">
           &copy; 2025 MonSite. Tous droits réservés.
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };

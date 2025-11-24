@@ -9,7 +9,7 @@ export default function AccueilImage() {
     <div>
       {/* Image en pleine largeur avec titre centré */}
       <div>
-        <img className="img-fluid hero-img w-100" src={courbe} alt="image développeur web" />
+
         
         <div style={{marginTop: '100px', textAlign: 'center'}}>
           <h1>Mes competences acquise ou en cours d'acquisition</h1>
@@ -55,7 +55,7 @@ export default function AccueilImage() {
             <Card className="h-100">
               
               <Card.Body className="d-flex flex-column text-center">
-                 <img
+                <img
                 src={loupe}
                 alt="UX Design"
                 style={{ width: '60px', marginBottom: '1rem' }}
