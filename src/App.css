@@ -48,3 +48,69 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); } /* rebond plus haut */
 }
+
+/* Navbar générale */
+.navbar-fun {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 15px 15px;
+}
+
+/* Logo / marque */
+.brand-fun {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.brand-fun:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* Liens de nav */
+.nav-fun-links .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+  position: relative;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+/* Effet hover cartoon/fun */
+.nav-fun-links .nav-link::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 0%;
+  background: #fff;
+  border-radius: 2px;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-fun-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-fun-links .nav-link:hover {
+  color: #ffeb3b !important;
+  transform: translateY(-3px);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Toggle button couleur fun */
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
