@@ -119,6 +119,14 @@ export default memo(function Portfolio() {
             </div>
           </div>
 
+          <div className="card" style={{ width: '18rem' }}>
+            <img src={logo} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height: '200px', width: '100%', objectFit: 'cover', margin: '0 auto', display: 'block', background:'black'}} />
+            <div className="card-body text-center">
+              <h5 className="card-title">Projet <EPCF></EPCF></h5>
+              <a href=" https://a-yohann.github.io/projet-EPCF/" target='_blank' rel="noopener noreferrer" className="btn btn-cartoon">Voir plus</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </>
