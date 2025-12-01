@@ -9,6 +9,7 @@ import magic from "../src/assets/magic.png";
 import expedition from "../src/assets/expedition33.avif";
 import logo from "../src/assets/bureau.jpg";
 import bg3 from "../src/assets/bg3.png";
+import japon from "../src/assets/japon.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default memo(function Portfolio() {
@@ -120,7 +121,7 @@ export default memo(function Portfolio() {
           </div>
 
           <div className="card" style={{ width: '18rem' }}>
-            <img src={logo} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height: '200px', width: '100%', objectFit: 'cover', margin: '0 auto', display: 'block', background:'black'}} />
+            <img src={japon} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height: '200px', width: '100%', objectFit: 'cover', margin: '0 auto', display: 'block', background:'black'}} />
             <div className="card-body text-center">
               <h5 className="card-title">Projet epcf</h5>
               <a href=" https://a-yohann.github.io/projet-EPCF/" target='_blank' rel="noopener noreferrer" className="btn btn-cartoon">Voir plus</a>
