@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import { Carousel, Button } from 'react-bootstrap';
 import ciseaux from '../src/assets/ciseaux.png';
 import calculatrice from '../src/assets/calculatrice.png';
 import morpion from '../src/assets/morpion.png';
@@ -11,125 +10,99 @@ import logo from "../src/assets/bureau.jpg";
 import bg3 from "../src/assets/bg3.png";
 import japon from "../src/assets/japon.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/App.css';
 
 export default memo(function Portfolio() {
 
+  const projectsHTML = [
+    { title: "Expedition 33", image: expedition, link: "https://a-yohann.github.io/projet-expedition-33/" },
+    { title: "Baldur's Gate 3", image: bg3, link: "https://a-yohann.github.io/projet-baldur-gate-3/" },
+    { title: "Projet Magic", image: magic, link: "https://a-yohann.github.io/projet-magic/" },
+    { title: "Espace Rénovation", image: logo, link: "https://a-yohann.github.io/Projet-Espace-Renovation/" },
+    { title: "Projet EPCF", image: japon, link: "https://a-yohann.github.io/projet-EPCF/" },
+  ];
+
   const projectsJeux = [
-    {
-      title: "Morpion",
-      description: "Un jeu de Morpion interactif en JavaScript.",
-      image: morpion,
-      link: "https://morpionyohann.netlify.app"
-    },
-    {
-      title: "Pierre-Feuille-Ciseaux",
-      description: "Jeu classique Pierre-Feuille-Ciseaux en ligne.",
-      image: ciseaux,
-      link: "https://a-yohann.github.io/Pierre-Feuille-Ciseaux/"
-    },
-    {
-      title: "Calculatrice",
-      description: "Calculatrice simple mais fonctionnelle en React.",
-      image: calculatrice,
-      link: "https://a-yohann.github.io/calculatrice/"
-    },
-    {
-      title: "Le Juste Prix",
-      description: "Jeu interactif Le Juste Prix.",
-      image: manette,
-      link: "https://a-yohann.github.io/juste-prix/"
-    },
-    {
-      title: "Le Pendu",
-      description: "Le jeu du Pendu avec une interface moderne.",
-      image: pendu,
-      link: "https://a-yohann.github.io/le-pendu/"
-    }
+    { title: "Morpion", description: "Jeu de Morpion en JavaScript.", image: morpion, link: "https://morpionyohann.netlify.app" },
+    { title: "Pierre-Feuille-Ciseaux", description: "Jeu classique en JavaScript.", image: ciseaux, link: "https://a-yohann.github.io/Pierre-Feuille-Ciseaux/" },
+    { title: "Calculatrice", description: "Calculatrice en React.", image: calculatrice, link: "https://a-yohann.github.io/calculatrice/" },
+    { title: "Le Juste Prix", description: "Jeu interactif en JavaScript.", image: manette, link: "https://a-yohann.github.io/juste-prix/" },
+    { title: "Le Pendu", description: "Jeu du Pendu en JavaScript.", image: pendu, link: "https://a-yohann.github.io/le-pendu/" },
   ];
 
   return (
-    <>
-      <div className="container my-5">
-        {/* Titre centré */}
-        <h1 className="text-center mb-4 pt-5">Portfolio</h1>
-        <p className='text-center mb-4'>Voici quelques projets que j'ai réalisés pour m'entraîner</p>
-        <h2 className='text-center mb-4'>Mes projets (jeux) réalisés</h2>
+    <div className="container my-5 pt-4">
 
-        {/* Carrousel des projets jeux */}
-        <Carousel fade interval={5000} className="my-5" controls={true} indicators={false} nextIcon={<span className='carousel-control-next-icon custom-arrow-color' />}>
-          {projectsJeux.map((project, index) => (
-            <Carousel.Item key={index}>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
+      {/* Titre */}
+      <div className="text-center mb-5">
+        <h1 className="mb-2">Portfolio</h1>
+        <div className="portfolio-divider mx-auto mb-3"></div>
+        <p className="text-muted">Quelques projets réalisés pour m'entraîner</p>
+      </div>
+
+      {/* Projets HTML/CSS */}
+      <section className="mb-5">
+        <p className="portfolio-section-label text-center text-uppercase text-muted mb-4">Projets HTML / CSS</p>
+        <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+          {projectsHTML.map((project, index) => (
+            <div className="col" key={index}>
+              <div className="card h-100 portfolio-card">
                 <img
-                  className="d-block"
                   src={project.image}
+                  className="card-img-top"
                   alt={project.title}
-                  style={{
-                    maxHeight: '250px',
-                    width: 'auto',
-                    objectFit: 'cover',
-                    margin: '0 auto'
-                  }}
+                  style={{ height: '200px', objectFit: 'cover' }}
                 />
+                <div className="card-body d-flex flex-column">
+                  <span className="portfolio-badge mb-2">HTML / CSS</span>
+                  <h5 className="card-title">{project.title}</h5>
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-cartoon mt-auto text-center"
+                  >
+                    Voir le projet
+                  </a>
+                </div>
               </div>
-              <Carousel.Caption className="p-3 rounded">
-                <Button variant="light" href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-cartoon">
-                  Voir plus
-                </Button>
-              </Carousel.Caption>
-            </Carousel.Item>
+            </div>
           ))}
-        </Carousel>
-      </div>
-
-      {/* Partie HTML/CSS */}
-      <div className='container my-5'>
-        <h2 className='text-center mb-4'>Voici des projets réalisés en HTML/CSS</h2>
-
-        <div className="d-flex justify-content-center flex-wrap gap-4">
-
-          <div className="card" style={{ width: '18rem' }}>
-            <img src={expedition} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height: '200px', width: '100%', objectFit: 'cover', margin: '0 auto', display: 'block', background:'black'}} />
-            <div className="card-body text-center">
-              <h5 className="card-title">Projet Expedition 33</h5>
-              <a href="https://a-yohann.github.io/projet-expedition-33/" target='_blank' rel="noopener noreferrer" className="btn btn-cartoon">Voir plus</a>
-            </div>
-          </div>
-
-          <div className="card" style={{ width: '18rem' }}>
-            <img src={bg3} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height: '200px', width: '100%', objectFit: 'cover', margin: '0 auto', display: 'block', background:'black'}} />
-            <div className="card-body text-center">
-              <h5 className="card-title">Projet Baldur's Gate 3</h5>
-              <a href="https://a-yohann.github.io/projet-baldur-gate-3/" target='_blank' rel="noopener noreferrer" className="btn btn-cartoon">Voir plus</a>
-            </div>
-          </div>
-
-          <div className="card" style={{ width: '18rem' }}>
-            <img src={magic} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height:'200px', objectFit:'cover'}} />
-            <div className="card-body text-center">
-              <h5 className="card-title">Projet Magic</h5>
-              <a href="https://a-yohann.github.io/projet-magic/" target='_blank' rel="noopener noreferrer" className="btn btn-cartoon">Voir plus</a>
-            </div>
-          </div>
-
-          <div className="card" style={{ width: '18rem' }}>
-            <img src={logo} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height: '200px', width: '100%', objectFit: 'cover', margin: '0 auto', display: 'block', background:'black'}} />
-            <div className="card-body text-center">
-              <h5 className="card-title">Projet Espace Rénovation</h5>
-              <a href="https://a-yohann.github.io/Projet-Espace-Renovation/" target='_blank' rel="noopener noreferrer" className="btn btn-cartoon">Voir plus</a>
-            </div>
-          </div>
-
-          <div className="card" style={{ width: '18rem' }}>
-            <img src={japon} alt="Image d'un cahier et d'un ordinateur" className="card-img-top" style={{height: '200px', width: '100%', objectFit: 'cover', margin: '0 auto', display: 'block', background:'black'}} />
-            <div className="card-body text-center">
-              <h5 className="card-title">Projet epcf</h5>
-              <a href=" https://a-yohann.github.io/projet-EPCF/" target='_blank' rel="noopener noreferrer" className="btn btn-cartoon">Voir plus</a>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </>
+      </section>
+
+      {/* Jeux interactifs */}
+      <section>
+        <p className="portfolio-section-label text-center text-uppercase text-muted mb-4">Jeux interactifs</p>
+        <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+          {projectsJeux.map((project, index) => (
+            <div className="col" key={index}>
+              <div className="card h-100 portfolio-card">
+                <img
+                  src={project.image}
+                  className="card-img-top"
+                  alt={project.title}
+                  style={{ height: '200px', objectFit: 'cover' }}
+                />
+                <div className="card-body d-flex flex-column">
+                  <span className="portfolio-badge mb-2">JavaScript</span>
+                  <h5 className="card-title">{project.title}</h5>
+                  <p className="card-text text-muted" style={{ fontSize: '0.875rem' }}>{project.description}</p>
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-cartoon mt-auto text-center"
+                  >
+                    Voir le projet
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
   );
 });

@@ -17,7 +17,7 @@ export default function Home() {
         <div className="hero-text position-absolute top-50 start-50 translate-middle text-center">
           <h1>Bonjour, je suis Yohann</h1>
           <h3>Développeur web fullstack</h3>
-          <a href="#apropos" className="btn btn-cartoon mt-3">En savoir plus</a>
+          <a href="#apropos" className="btn-cartoon mt-3">En savoir plus</a>
         </div>
       </section>
 
@@ -37,7 +37,6 @@ export default function Home() {
 
           {/* Colonne droite : texte */}
           <div className="col-md-6">
-            {/* Texte principal */}
             <h4>À propos</h4>
             <hr/>
             <p>
@@ -47,19 +46,46 @@ export default function Home() {
               avec les compétences acquises durant la formation.
             </p>
             <div className='d-flex justify-content-start mt-3 mb-4'>
-              <a href="https://a-yohann.github.io/C.V-yohann/" target='_blank' rel="noopener noreferrer" className="btn btn-danger btn-cartoon">
+              <a href="https://a-yohann.github.io/C.V-yohann/" target='_blank' rel="noopener noreferrer" className="btn-cartoon">
                 Consulter le CV
               </a>
             </div>
 
-            {/* Mon savoir-faire */}
             <h5 className="mt-4">Mon savoir-faire</h5>
             <hr/>
-            <p>
-              Je développe des applications web complètes en utilisant HTML, CSS, 
-              JavaScript (PHP bientôt). Je sais également créer des projets 
-              responsive et optimiser l’expérience utilisateur sur tous les écrans.
+            <p style={{ lineHeight: "1.7", marginBottom: "1.25rem" }}>
+              Je développe des applications web complètes, du back-end au front-end,
+              en utilisant des outils modernes et en privilégiant de bonnes pratiques.
             </p>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <div>
+                <p className="skills__category">Back-end</p>
+                <div className="skills__badges">
+                  {["PHP", "Symfony"].map(tech => (
+                    <span key={tech} className="skills__badge skills__badge--blue">{tech}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="skills__category">Front-end</p>
+                <div className="skills__badges">
+                  {["HTML", "CSS", "SCSS", "JavaScript"].map(tech => (
+                    <span key={tech} className="skills__badge skills__badge--purple">{tech}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="skills__category">Responsive & UX</p>
+                <div className="skills__badges">
+                  {["Responsive design", "Optimisation UX"].map(tech => (
+                    <span key={tech} className="skills__badge skills__badge--green">{tech}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -74,6 +100,9 @@ export default function Home() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="skill-bounce" alt="JavaScript" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="skill-bounce" alt="React" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" className="skill-bounce" alt="PHP" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" className="skill-bounce" alt="Symfony" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" className="skill-bounce" alt="SCSS" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" className="skill-bounce" alt="Tailwind CSS" />
             </div>
           </div>
         </div>

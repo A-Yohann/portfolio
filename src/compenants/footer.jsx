@@ -1,60 +1,51 @@
 import React, { memo } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Container, Nav } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 
 const Footer = () => {
   return (
-    <footer className="navbar-fun mt-auto w-100">
-      <Container fluid>
-        <div className="d-flex flex-column flex-lg-row justify-content-evenly align-items-start py-3">
-          
-          {/* Informations contact */}
-          <div className="mb-2">
-            <h5 className="brand-fun">Yohann</h5>
-            <address>
-              <ul className="list-unstyled">
-                <li>16444 Route de Marsal</li>
-                <li>24130, La Force, France</li>
-                <li>06.31.28.44.64</li>
-                <li>at.yohann@gmail.com</li>
+    <footer className="footer-pro">
+      <Container>
+        <div className="footer-pro__top">
+
+          <div>
+            <p className="footer-pro__brand">Yohann</p>
+            <p className="footer-pro__tagline">Développeur web fullstack</p>
+            <p className="footer-pro__contact">
+              16444 Route de Marsal, 24130 La Force<br />
+              06.31.28.44.64<br />
+              at.yohann@gmail.com
+            </p>
+          </div>
+
+          <div className="footer-pro__nav-wrapper">
+            <div>
+              <p className="footer-pro__col-title">Navigation</p>
+              <ul className="footer-pro__links">
+                <li><NavLink to="/" end>Accueil</NavLink></li>
+                <li><NavLink to="/services">Services</NavLink></li>
+                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
               </ul>
-            </address>
-          </div>
-
-          {/* Liens utiles */}
-          <div className="mb-2">
-            <h5>Liens utiles</h5>
-            <Nav className="nav-fun-links flex-column">
-              <Nav.Link as={NavLink} to="/" end>Accueil</Nav.Link>
-              <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
-              <Nav.Link as={NavLink} to="/portfolio">Portfolio</Nav.Link>
-              <Nav.Link as={NavLink} to="/contact">Me contacter</Nav.Link>
-              <Nav.Link as={NavLink} to="/mention">Mentions légales</Nav.Link>
-            </Nav>
-          </div>
-
-          {/* Dernières réalisations */}
-          <div className="mb-2">
-            <h5>Mes dernières réalisations</h5>
-            <ul className="list-unstyled">
-              <li>Morpion</li>
-              <li>Pierre, Feuille, Ciseaux</li>
-              <li>Calculatrice</li>
-              <li>Juste Prix</li>
-              <li>Le jeu du pendu</li>
-              <li>Projet Expedition 33</li>
-              <li>Projet Baldur's Gate 3</li>
-              <li>Projet Magic</li>
-              <li>Espace Renovation</li>
-            </ul>
+            </div>
+            <div>
+              <p className="footer-pro__col-title">Légal</p>
+              <ul className="footer-pro__links">
+                <li><NavLink to="/mention">Mentions légales</NavLink></li>
+              </ul>
+            </div>
+            <div>
+              <p className="footer-pro__col-title">Support</p>
+              <ul className="footer-pro__links">
+                <li><NavLink to="/contact">Me contacter</NavLink></li>
+              </ul>
+            </div>
           </div>
 
         </div>
-
-        <hr className="bg-white" />
-        <div className="text-center text-white">
-          &copy; 2025 MonSite. Tous droits réservés.
+        <div className="footer-pro__bottom">
+          <span>© 2025 Yohann. Tous droits réservés.</span>
         </div>
       </Container>
     </footer>
