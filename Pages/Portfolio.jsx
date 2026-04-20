@@ -36,13 +36,13 @@ export default memo(function Portfolio() {
       title: "F1 Zone",
       description: "Site dédié à la Formule 1 développé en PHP / Symfony.",
       image: f1Img,
-      link: "https://f1-zone.duyo5958.odns.fr"
+      link: "http://f1-zone.duyo5958.odns.fr"
     },
     {
       title: "Horloge Ancienne",
       description: "Site vitrine développé en PHP / Symfony.",
       image: horlogeImg,
-      link: "https://horloge-ancienne.duyo5958.odns.fr"
+      link: "http://horloge-ancienne.duyo5958.odns.fr"
     },
   ];
 
