@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../src/App.css';
 
 const ContactPage = () => {
+  const [status, setStatus] = useState('idle');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    try {
+      const response = await fetch('/contact.php', {
+        method: 'POST',
+        body: new FormData(form),
+      });
+      const result = await response.text();
+      setStatus(result === 'success' ? 'success' : 'error');
+      if (result === 'success') form.reset();
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <Container className="my-5">
 
@@ -17,12 +36,24 @@ const ContactPage = () => {
         <Col md={6}>
           <div className="contact__card">
             <p className="contact__card-title">Formulaire de contact</p>
-            <form>
-              <input className="contact__field" type="text" placeholder="Votre nom" />
-              <input className="contact__field" type="email" placeholder="Votre adresse e-mail" />
-              <input className="contact__field" type="tel" placeholder="Votre numéro de téléphone" />
-              <input className="contact__field" type="text" placeholder="Sujet" />
-              <textarea className="contact__field" rows={4} placeholder="Votre message"></textarea>
+
+            {status === 'success' && (
+              <div style={{ color: 'green', marginBottom: '1rem' }}>
+                ✅ Message envoyé ! Je vous répondrai dans les plus brefs délais.
+              </div>
+            )}
+            {status === 'error' && (
+              <div style={{ color: 'red', marginBottom: '1rem' }}>
+                ❌ Une erreur est survenue. Veuillez réessayer.
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit}>
+              <input className="contact__field" type="text" name="nom" placeholder="Votre nom" required />
+              <input className="contact__field" type="email" name="email" placeholder="Votre adresse e-mail" required />
+              <input className="contact__field" type="tel" name="telephone" placeholder="Votre numéro de téléphone" />
+              <input className="contact__field" type="text" name="sujet" placeholder="Sujet" required />
+              <textarea className="contact__field" name="message" rows={4} placeholder="Votre message" required></textarea>
               <button className="contact__btn" type="submit">Envoyer</button>
             </form>
           </div>
