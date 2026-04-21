@@ -9,10 +9,18 @@ export default function Home() {
       {/* Hero section */}
       <section className="position-relative text-white" style={{ height: '100vh', overflow: 'hidden' }}>
         <img
-          style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.4)' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           src={banane}
           alt="Image développeur web"
         />
+
+        {/* Overlay */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(to bottom, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.95) 100%)',
+        }} />
+
         <div className="position-absolute top-50 start-50 translate-middle text-center w-100 px-4">
           <p style={{ letterSpacing: '4px', fontSize: '0.85rem', textTransform: 'uppercase', color: '#00D4FF', marginBottom: '1rem' }}>
             Développeur web fullstack
@@ -20,12 +28,20 @@ export default function Home() {
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', fontWeight: '700', marginBottom: '1.5rem', lineHeight: '1.2' }}>
             Bonjour, je suis <span style={{ color: '#00D4FF' }}>Yohann</span>
           </h1>
-          <p style={{ fontSize: '1.1rem', color: '#e0e0e0', maxWidth: '500px', margin: '0 auto 2rem' }}>
+          <p style={{
+            fontSize: '1.1rem',
+            color: '#fff',
+            maxWidth: '500px',
+            margin: '0 auto 2rem',
+          }}>
             Je conçois et développe des applications web modernes, du design à la mise en production.
           </p>
           <div className="d-flex gap-3 justify-content-center flex-wrap">
             <a href="#apropos" className="btn-cartoon">En savoir plus</a>
-            <a href="https://a-yohann.github.io/C.V-yohann/" target="_blank" rel="noopener noreferrer"
+            <a
+              href="https://a-yohann.github.io/C.V-yohann/"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 padding: '0.6rem 1.5rem',
                 border: '1px solid #00D4FF',
@@ -33,7 +49,17 @@ export default function Home() {
                 borderRadius: '4px',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
-              }}>
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#00D4FF';
+                e.currentTarget.style.color = '#1a1a2e';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = '#00D4FF';
+              }}
+            >
               Consulter le CV
             </a>
           </div>
