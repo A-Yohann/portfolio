@@ -37,7 +37,29 @@ export default function Home() {
             Je conçois et développe des applications web modernes, du design à la mise en production.
           </p>
           <div className="d-flex gap-3 justify-content-center flex-wrap">
-            <a href="#apropos" className="btn-cartoon">En savoir plus</a>
+            
+              <a href="#apropos"
+              style={{
+                padding: '0.6rem 1.5rem',
+                border: '1px solid #00D4FF',
+                color: '#fff',
+                borderRadius: '4px',
+                textDecoration: 'none',
+                fontSize: '0.9rem',
+                background: '#1a1a2e',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#00D4FF';
+                e.currentTarget.style.color = '#1a1a2e';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = '#1a1a2e';
+                e.currentTarget.style.color = '#fff';
+              }}
+            >
+              En savoir plus
+            </a>
             <a
               href="https://a-yohann.github.io/C.V-yohann/"
               target="_blank"
@@ -49,6 +71,7 @@ export default function Home() {
                 borderRadius: '4px',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
+                background: 'transparent',
                 transition: 'all 0.2s',
               }}
               onMouseEnter={e => {
