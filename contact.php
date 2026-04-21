@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $sujet   = htmlspecialchars($_POST["sujet"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $destinataire = "at.yohann@gmail.com";
+    $destinataire = "contact@yohanndufresne.fr";
     $corps = "Nom : $nom\nEmail : $email\nTéléphone : $tel\nMessage :\n$message";
     $headers = "From: $email\r\nReply-To: $email\r\n";
 

@@ -91,7 +91,7 @@ const ContactPage = () => {
 
             <div className="contact__coord">
               <span className="contact__coord-label">E-mail</span>
-              <span className="contact__coord-value">at.yohann@gmail.com</span>
+              <span className="contact__coord-value">contact@yohanndufresne.fr</span>
             </div>
             <hr className="contact__sep" />
 

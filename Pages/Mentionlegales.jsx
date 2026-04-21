@@ -19,7 +19,7 @@ export default memo(function Mentionlegales() {
               📁 16444 Route de Marsal<br />
               📍 24130 La Force, France<br />
               📞 06.31.28.44.64<br />
-              📧 at.yohann@gmail.com<br /><br />
+              📧 contact@yohanndufresne.fr<br /><br />
               Ce site est un portfolio personnel réalisé dans un but pédagogique.
             </Accordion.Body>
           </Accordion.Item>

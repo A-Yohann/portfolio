@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="footer-pro__contact">
               16444 Route de Marsal, 24130 La Force<br />
               06.31.28.44.64<br />
-              at.yohann@gmail.com
+              contact@yohanndufresne.fr
             </p>
           </div>
 
@@ -45,8 +45,7 @@ const Footer = () => {
 
         </div>
         <div className="footer-pro__bottom">
-          <span>© 2025 Yohann. Tous droits réservés.</span>
-        </div>
+            <span>© {new Date().getFullYear()} Yohann. Tous droits réservés.</span>        </div>
       </Container>
     </footer>
   );
