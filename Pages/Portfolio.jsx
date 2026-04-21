@@ -12,6 +12,7 @@ import japon from "../src/assets/japon.jpg";
 import f1Img from "../src/assets/f1-actus.png";
 import horlogeImg from "../src/assets/type-de-mecanisme.avif";
 import assistantImg from "../src/assets/mohamed_hassan-analysis-3782319_1920.jpg";
+import darkfightImg from "../src/assets/content.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/App.css';
 
@@ -30,19 +31,29 @@ export default memo(function Portfolio() {
       title: "Ton Assistant",
       description: "Assistant personnel développé en PHP / Symfony.",
       image: assistantImg,
-      link: "https://tonassistant.fr"
+      link: "https://tonassistant.fr",
+      darkBg: false,
     },
     {
       title: "F1 Zone",
       description: "Site dédié à la Formule 1 développé en PHP / Symfony.",
       image: f1Img,
-      link: "http://f1-zone.duyo5958.odns.fr"
+      link: "http://f1-zone.duyo5958.odns.fr",
+      darkBg: false,
     },
     {
       title: "Horloge Ancienne",
       description: "Site vitrine développé en PHP / Symfony.",
       image: horlogeImg,
-      link: "http://horloge-ancienne.duyo5958.odns.fr"
+      link: "http://horloge-ancienne.duyo5958.odns.fr",
+      darkBg: false,
+    },
+    {
+      title: "Darkest Fight Arena",
+      description: "Jeu de combat développé en PHP / Symfony.",
+      image: darkfightImg,
+      link: "http://darkest-fight-arena.sc7duyo5958.universe.wf/",
+      darkBg: true,
     },
   ];
 
@@ -54,15 +65,15 @@ export default memo(function Portfolio() {
     { title: "Le Pendu", description: "Jeu du Pendu en JavaScript.", image: pendu, link: "https://a-yohann.github.io/le-pendu/" },
   ];
 
-  const CardLink = ({ href, children }) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="btn-cartoon mt-auto text-center"
-    >
-      {children}
-    </a>
+  const CardLink = ({ href, children }) => React.createElement(
+    'a',
+    {
+      href: href,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      className: 'btn-cartoon mt-auto text-center'
+    },
+    children
   );
 
   return (
@@ -77,7 +88,7 @@ export default memo(function Portfolio() {
       {/* Projets HTML/CSS */}
       <section className="mb-5">
         <p className="portfolio-section-label text-center text-uppercase text-muted mb-4">Projets HTML / CSS</p>
-        <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+        <div className="row row-cols-1 row-cols-md-3 g-3">
           {projectsHTML.map((project, index) => (
             <div className="col" key={index}>
               <div className="card h-100 portfolio-card">
@@ -109,7 +120,11 @@ export default memo(function Portfolio() {
                   src={project.image}
                   className="card-img-top"
                   alt={project.title}
-                  style={{ height: '200px', objectFit: 'cover' }}
+                  style={{
+                    height: '200px',
+                    objectFit: project.darkBg ? 'contain' : 'cover',
+                    backgroundColor: project.darkBg ? '#000' : 'transparent',
+                  }}
                 />
                 <div className="card-body d-flex flex-column">
                   <span className="portfolio-badge mb-2">PHP / Symfony</span>
@@ -126,7 +141,7 @@ export default memo(function Portfolio() {
       {/* Jeux interactifs */}
       <section className="mb-5">
         <p className="portfolio-section-label text-center text-uppercase text-muted mb-4">Jeux interactifs</p>
-        <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+        <div className="row row-cols-1 row-cols-md-3 g-3">
           {projectsJeux.map((project, index) => (
             <div className="col" key={index}>
               <div className="card h-100 portfolio-card">
@@ -134,7 +149,7 @@ export default memo(function Portfolio() {
                   src={project.image}
                   className="card-img-top"
                   alt={project.title}
-                  style={{ height: '200px', objectFit: 'cover' }}
+                  style={{ height: '200px', objectFit: 'contain', padding: '1rem' }}
                 />
                 <div className="card-body d-flex flex-column">
                   <span className="portfolio-badge mb-2">JavaScript</span>
