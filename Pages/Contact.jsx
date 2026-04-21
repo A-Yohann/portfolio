@@ -54,6 +54,20 @@ const ContactPage = () => {
               <input className="contact__field" type="tel" name="telephone" placeholder="Votre numéro de téléphone" />
               <input className="contact__field" type="text" name="sujet" placeholder="Sujet" required />
               <textarea className="contact__field" name="message" rows={4} placeholder="Votre message" required></textarea>
+
+              <div className="d-flex align-items-start gap-2 mb-3">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  required
+                  style={{ marginTop: '3px', cursor: 'pointer' }}
+                />
+                <label htmlFor="terms" style={{ fontSize: '0.875rem', color: '#6c757d', cursor: 'pointer' }}>
+                  J'accepte que mes données soient utilisées pour traiter ma demande de contact.
+                </label>
+              </div>
+
               <button className="contact__btn" type="submit">Envoyer</button>
             </form>
           </div>
