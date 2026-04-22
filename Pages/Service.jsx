@@ -67,9 +67,10 @@ const skills = [
 export default function AccueilImage() {
   return (
     <div>
-      <div style={{ marginTop: '100px', textAlign: 'center' }}>
-        <h1>Mes compétences acquises ou en cours d'acquisition</h1>
-        <p>Voici les prestations sur lesquelles je peux intervenir.</p>
+      <div style={{ marginTop: '100px', textAlign: 'center' }} className="mb-5">
+        <h1 className="mb-2">Mes compétences acquises ou en cours d'acquisition</h1>
+        <div className="portfolio-divider mx-auto mb-3"></div>
+        <p className="text-muted">Voici les prestations sur lesquelles je peux intervenir.</p>
       </div>
 
       <Container className="my-5">

@@ -64,7 +64,8 @@ const ContactPage = () => {
                   style={{ marginTop: '3px', cursor: 'pointer' }}
                 />
                 <label htmlFor="terms" style={{ fontSize: '0.875rem', color: '#6c757d', cursor: 'pointer' }}>
-                  J'accepte que mes données soient utilisées pour traiter ma demande de contact.
+                    J'accepte que mes données soient utilisées conformément aux{' '}
+                    <a href="/mention" style={{ color: '#1a1a2e', fontWeight: '500' }}>mentions légales</a>.
                 </label>
               </div>
 
